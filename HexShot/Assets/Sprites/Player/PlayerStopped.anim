@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Stopped
+  m_Name: PlayerStopped
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1292603989, guid: 14207f2300992534a922dff66866ab64, type: 3}
+      value: {fileID: -360846433, guid: 23494fd91a71c604288d6a6a9f796699, type: 3}
     - time: 0.083333336
-      value: {fileID: -110441245, guid: 14207f2300992534a922dff66866ab64, type: 3}
+      value: {fileID: -1672790398, guid: 23494fd91a71c604288d6a6a9f796699, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1292603989, guid: 14207f2300992534a922dff66866ab64, type: 3}
-    - {fileID: -110441245, guid: 14207f2300992534a922dff66866ab64, type: 3}
+    - {fileID: -360846433, guid: 23494fd91a71c604288d6a6a9f796699, type: 3}
+    - {fileID: -1672790398, guid: 23494fd91a71c604288d6a6a9f796699, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14207f2300992534a922dff66866ab64
+guid: 23494fd91a71c604288d6a6a9f796699
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: officer_shoot_strip_0
+      name: Player_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e775cacbe21e5f44aa8813581b856cb2
-      internalID: -1292603989
+      spriteID: 73ab79b20b34da44189c95cb93dbbaf0
+      internalID: -360846433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: officer_shoot_strip_1
+      name: Player_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 480
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f29ebfa8eb34c54fa9fb474808edd52
-      internalID: -110441245
+      spriteID: bd495194cab0be2439e2400e633aeca8
+      internalID: -1672790398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: officer_shoot_strip_2
+      name: Player_2
       rect:
         serializedVersion: 2
-        x: 76
+        x: 960
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 630c3b5c02a818d459a872bfc8023eff
-      internalID: 1206252411
+      spriteID: e642df2a5269d40479dd08f23c547e3b
+      internalID: 1105413571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: officer_shoot_strip_3
+      name: Player_3
       rect:
         serializedVersion: 2
-        x: 114
+        x: 1440
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf2fc9046de6ad244940283b2612ac70
-      internalID: -486910868
+      spriteID: aa6b1b67475f47f41948f6ebe4b7fc10
+      internalID: 660264653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: officer_shoot_strip_4
+      name: Player_4
       rect:
         serializedVersion: 2
-        x: 152
+        x: 1920
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4569c4846eebe24cac9d3d663ecb467
-      internalID: -1767836436
+      spriteID: 773969e1e80a0a149acf3727cb571785
+      internalID: -869946636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: officer_shoot_strip_5
+      name: Player_5
       rect:
         serializedVersion: 2
-        x: 190
+        x: 2400
         y: 0
-        width: 38
-        height: 45
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6efa3f300099294792755e0caeb7f6a
-      internalID: -256104184
+      spriteID: 33b3033b9f25e8d4bbdda4be31a5fa32
+      internalID: -1597843878
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      officer_shoot_strip_0: -1292603989
-      officer_shoot_strip_1: -110441245
-      officer_shoot_strip_2: 1206252411
-      officer_shoot_strip_3: -486910868
-      officer_shoot_strip_4: -1767836436
-      officer_shoot_strip_5: -256104184
+      Player_0: -360846433
+      Player_1: -1672790398
+      Player_2: 1105413571
+      Player_3: 660264653
+      Player_4: -869946636
+      Player_5: -1597843878
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
