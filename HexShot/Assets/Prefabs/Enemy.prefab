@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5859514614516011212}
   - component: {fileID: 5859514614516011187}
   - component: {fileID: 5859514614516011214}
+  - component: {fileID: -6643467358763177863}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -66,7 +67,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -94,6 +95,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937f16c34441784ba8267faa37ce41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6643467358763177863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859514614516011186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cb9a47df900154b962f2e53076ed26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentHealth: 20
+  _maximumHealth: 20
+  OnDied:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5859514614516011214}
+        m_TargetAssemblyTypeName: EnemyMovement, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5859514615793630979
 GameObject:
   m_ObjectHideFlags: 0

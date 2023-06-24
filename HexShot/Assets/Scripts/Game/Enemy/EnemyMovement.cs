@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    private SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
     void Start()
     {
         
@@ -14,5 +20,10 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChangeColor()
+    {
+        _spriteRenderer.color = new Color(255, 0, 0);
     }
 }

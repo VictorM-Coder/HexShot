@@ -6,6 +6,9 @@ public class Bullet : MonoBehaviour
 {
     private Camera _camera;
 
+    [SerializeField]
+    private float _damageAmount;
+
     private void Awake()
     {
         _camera = Camera.main;
@@ -17,14 +20,35 @@ public class Bullet : MonoBehaviour
         DestroyWhenOffScreen();
     }
 
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.GetComponent<EnemyMovement>())
+    //     {
+    //         Destroy(collision.gameObject);
+    //         Destroy(gameObject);
+    //     }
+    // }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<EnemyMovement>())
         {
-            Destroy(collision.gameObject);
+            var healthController = collision.gameObject.GetComponent<HealthController>();
+
+            healthController.TakeDamage(_damageAmount);
             Destroy(gameObject);
         }
     }
+
+    // private void OnCollisionStay2D(Collision2D collision)
+    // {
+    //     if(collision.gameObject.GetComponent<EnemyMovement>())
+    //     {
+    //         var healthController = collision.gameObject.GetComponent<HealthController>();
+
+    //         healthController.TakeDamage(_damageAmount);
+    //     }
+    // }
 
     private void DestroyWhenOffScreen()
     {
@@ -38,4 +62,5 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
