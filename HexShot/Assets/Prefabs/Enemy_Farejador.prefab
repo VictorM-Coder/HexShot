@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6319059033658379752}
   - component: {fileID: 7385481147842972191}
   m_Layer: 0
-  m_Name: Enemy_Amaldicoado
+  m_Name: Enemy_Farejador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cb9a47df900154b962f2e53076ed26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 30
-  _maximumHealth: 30
+  _currentHealth: 20
+  _maximumHealth: 20
   OnDied:
     m_PersistentCalls:
       m_Calls:
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289e3d15a8c68404d9feda7aa72bacc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 7
+  _playerAwarenessDistance: 15
 --- !u!50 &6319059033658379752
 Rigidbody2D:
   serializedVersion: 4
@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayerID: -49155897
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -581741685, guid: ef69b1bd70c36b64398ae3d3af443685, type: 3}
+  m_Sprite: {fileID: 1676651573, guid: 30d900692d617d441bd500a0ed75e8ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
