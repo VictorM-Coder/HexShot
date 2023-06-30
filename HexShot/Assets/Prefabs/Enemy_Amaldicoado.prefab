@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937f16c34441784ba8267faa37ce41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _speed: 4
   _rotationSpeed: 200
 --- !u!114 &9059865395408588878
 MonoBehaviour:
@@ -183,9 +183,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1, y: 0.4}
+  m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
-  m_Radius: 0.95
+  m_Radius: 1
 --- !u!1 &6319059034785128999
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +257,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -49155897
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -581741685, guid: ef69b1bd70c36b64398ae3d3af443685, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

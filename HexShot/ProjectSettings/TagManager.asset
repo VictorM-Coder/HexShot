@@ -47,11 +47,14 @@ TagManager:
   - name: Collectable
     uniqueID: 1185547775
     locked: 0
+  - name: Enemy
+    uniqueID: 4245811399
+    locked: 0
   - name: Bullet
     uniqueID: 4175788859
     locked: 0
-  - name: Enemy
-    uniqueID: 4245811399
+  - name: Wall
+    uniqueID: 1532763129
     locked: 0
   - name: Player
     uniqueID: 2999568889
