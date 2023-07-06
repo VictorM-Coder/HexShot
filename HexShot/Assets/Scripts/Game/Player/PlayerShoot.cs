@@ -2,9 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerShoot : MonoBehaviour
 {
+    public int _bullets = 6;
+    public int _numOfBullets;
+    public Image[] _imageBullets;
+    private float _bulletDisparedTime;
+    private bool isRegen;
+
+    [SerializeField]
+    private Texture2D _dispareCursor;
+
+    [SerializeField]
+    private Texture2D _normalCursor;
+    private Vector2 _cursorHotspot;
+
     [SerializeField]
     private GameObject _bulletPrefab;
 
@@ -17,26 +31,12 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private float _timeBetweenShots;
 
-    private bool _fireContinuously;
     private float _lastFireTime;
-    private bool _fireSingle;
 
     // Update is called once per frame
     void Update()
-    {
-        if(_fireContinuously || _fireSingle)
-        {
-            float timeSinceLastFire = Time.time - _lastFireTime;
-
-            if(timeSinceLastFire >= _timeBetweenShots)
-            {
-                FireBullet();
-
-                _lastFireTime = Time.time;
-                _fireSingle = false;
-            }
-            
-        }        
+    {  
+        updateBullets();   
     }
 
     private void FireBullet()
@@ -49,11 +49,44 @@ public class PlayerShoot : MonoBehaviour
 
     private void OnFire(InputValue inputValue)
     {
-        _fireContinuously = inputValue.isPressed;
-
-        if(inputValue.isPressed)
+        if(inputValue.isPressed && _numOfBullets > 0)
         {
-            _fireSingle = true;
+            float timeSinceLastFire = Time.time - _lastFireTime;
+
+            if(timeSinceLastFire >= _timeBetweenShots)
+            {
+                FireBullet();
+                StartCoroutine(cooldownCursor());
+                _numOfBullets--;
+                _lastFireTime = Time.time;
+            }
         }
+    }
+
+    private void updateBullets(){
+        for (int cont = 0; cont < _imageBullets.Length; cont++) {  
+            _imageBullets[cont].enabled = cont < _numOfBullets;
+        }
+
+
+        if (_numOfBullets < _bullets && !isRegen) {
+            StartCoroutine(regenBullets());
+            isRegen = true;
+        }
+
+    }
+
+    private IEnumerator regenBullets(){
+        yield return new WaitForSeconds(2f);
+        if (_numOfBullets < _bullets) _numOfBullets++;
+        isRegen = false;
+    }
+
+    private IEnumerator cooldownCursor() {
+        _cursorHotspot = new Vector2(_dispareCursor.width/2, _dispareCursor.width/2);
+        Cursor.SetCursor(_dispareCursor, _cursorHotspot, CursorMode.Auto);
+        yield return new WaitForSeconds(_timeBetweenShots);
+        _cursorHotspot = new Vector2(_normalCursor.width/2, _normalCursor.width/2);
+        Cursor.SetCursor(_normalCursor, _cursorHotspot, CursorMode.Auto);
     }
 }
