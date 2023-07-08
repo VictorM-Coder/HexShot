@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,15 +17,27 @@ public class HealthController : MonoBehaviour
         }
     }
 
+    public bool IsInvicibible {get; set; }
+
     public UnityEvent OnDied;
 
     public UnityEvent OnDamaged;
 
     public UnityEvent OnHealthChanged;
 
+    private void Awake()
+    {
+        OnHealthChanged.Invoke();
+    }
+
     public void TakeDamage(float damageAmount)
     {
         if (_currentHealth == 0)
+        {
+            return;
+        }
+
+        if(IsInvicibible)
         {
             return;
         }
