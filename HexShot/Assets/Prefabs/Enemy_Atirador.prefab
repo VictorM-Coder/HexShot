@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1056089713802426469, guid: e90f882c6f74b92439d0cee9351acb98, type: 3}
   _gunOffset: {fileID: 6134487878317285200}
-  _bulletPrefab: {fileID: 2341276074153263409, guid: ac4ddf0841027c849a112600e4002f8f, type: 3}
+  _bulletPrefab: {fileID: 2341276074153263409, guid: d16cc941dac39e845a14cf5599a3be81, type: 3}
 --- !u!58 &4395801554950566791
 CircleCollider2D:
   m_ObjectHideFlags: 0
