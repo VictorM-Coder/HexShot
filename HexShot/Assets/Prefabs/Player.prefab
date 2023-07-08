@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056089712994587195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 1.45, z: 0}
+  m_LocalPosition: {x: -0.102, y: 1.824, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -281,8 +281,9 @@ MonoBehaviour:
   - {fileID: 0}
   _dispareCursor: {fileID: 2800000, guid: b044c15fe2a2fac4a92db09855090ca7, type: 3}
   _normalCursor: {fileID: 2800000, guid: 90d4b88a0d8f0074a9ad5bfc9ba86c47, type: 3}
-  _bulletPrefab: {fileID: 2341276074153263409, guid: ac4ddf0841027c849a112600e4002f8f, type: 3}
-  _bulletSpeed: 40
+  _bulletPrefab:
+  - {fileID: 2341276074153263409, guid: ac4ddf0841027c849a112600e4002f8f, type: 3}
+  - {fileID: 2341276074153263409, guid: abb6bf1cb925f3642929d5e2c1c819e7, type: 3}
   _gunOffset: {fileID: 1056089712994587194}
   _timeBetweenShots: 0.4
 --- !u!114 &1056089713802426466

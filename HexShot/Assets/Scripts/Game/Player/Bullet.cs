@@ -6,6 +6,14 @@ public class Bullet : MonoBehaviour
 
     [SerializeField]
     private float _damageAmount;
+    [SerializeField]
+    private string _name;
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private bool _isPiercing;
+    [SerializeField]
+    private int _cost;
 
     private void Awake()
     {
@@ -18,6 +26,18 @@ public class Bullet : MonoBehaviour
         DestroyWhenOffScreen();
     }
 
+    public float getSpeed() {
+        return speed;
+    }
+
+    public int getCost() {
+        return _cost;
+    }
+
+    public string getName() {
+        return _name;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,9 +46,9 @@ public class Bullet : MonoBehaviour
             var healthController = collision.gameObject.GetComponent<HealthController>();
 
             healthController.TakeDamage(_damageAmount);
-            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if(!_isPiercing) Destroy(gameObject);
+        
     }
 
 

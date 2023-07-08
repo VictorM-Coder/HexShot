@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerShoot : MonoBehaviour
 {
+    [SerializeField]
+    public TextMeshProUGUI _bulletType;
     public int _bullets = 6;
     public int _numOfBullets;
     public Image[] _imageBullets;
@@ -20,10 +23,9 @@ public class PlayerShoot : MonoBehaviour
     private Vector2 _cursorHotspot;
 
     [SerializeField]
-    private GameObject _bulletPrefab;
+    private GameObject[] _bulletPrefab;
 
-    [SerializeField]
-    private float _bulletSpeed;
+    private int _bulletSelectedPosition = 0;
 
     [SerializeField]
     private Transform _gunOffset;
@@ -36,15 +38,16 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {  
-        updateBullets();   
+        updateBullets();  
+        changeBulletSelected(); 
     }
 
     private void FireBullet()
     {
-        GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
+        GameObject bullet = Instantiate(_bulletPrefab[_bulletSelectedPosition], _gunOffset.position, transform.rotation);
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 
-        rigidbody.velocity = _bulletSpeed * transform.up;
+        rigidbody.velocity = getBulletSelected().getSpeed() * transform.up;
     }
 
     private void OnFire(InputValue inputValue)
@@ -52,12 +55,13 @@ public class PlayerShoot : MonoBehaviour
         if(inputValue.isPressed && _numOfBullets > 0)
         {
             float timeSinceLastFire = Time.time - _lastFireTime;
+            int cost =  getBulletSelected().getCost();
 
-            if(timeSinceLastFire >= _timeBetweenShots)
+            if(timeSinceLastFire >= _timeBetweenShots && cost <= _numOfBullets)
             {
                 FireBullet();
                 StartCoroutine(cooldownCursor());
-                _numOfBullets--;
+                _numOfBullets-= cost;
                 _lastFireTime = Time.time;
             }
         }
@@ -88,5 +92,20 @@ public class PlayerShoot : MonoBehaviour
         yield return new WaitForSeconds(_timeBetweenShots);
         _cursorHotspot = new Vector2(_normalCursor.width/2, _normalCursor.width/2);
         Cursor.SetCursor(_normalCursor, _cursorHotspot, CursorMode.Auto);
+    }
+
+    private void changeBulletSelected() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (_bulletSelectedPosition < _bulletPrefab.Length-1) {
+                ++_bulletSelectedPosition;
+            }else {
+                _bulletSelectedPosition = 0;
+            }
+        }
+        _bulletType.text = ">>" + getBulletSelected().getName() + "<<";
+    }
+
+    private Bullet getBulletSelected() {
+        return  _bulletPrefab[_bulletSelectedPosition].GetComponent<Bullet>();
     }
 }
