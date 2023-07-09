@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponent<EnemyMovement>())
+        if(collision.GetComponent<EnemyMovement>() || collision.gameObject.GetComponent<HealthController>())
         {
             var healthController = collision.gameObject.GetComponent<HealthController>();
 
