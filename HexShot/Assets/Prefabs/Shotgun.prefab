@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 9030210950462146560}
   - component: {fileID: 3292599387912706421}
   - component: {fileID: 2981284912760981429}
-  - component: {fileID: 85219876892801551}
+  - component: {fileID: 4680161382996176309}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Bullet
+  m_Name: Shotgun
+  m_TagString: Shotgun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847fe0b340eed7b4fb39b734a74805ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 10
-  _name: Normal Shot
-  speed: 40
+  _damageAmount: 5
+  _name: Gunshot
+  speed: 30
   _isPiercing: 0
-  _cost: 1
+  _cost: 3
 --- !u!50 &3292599387912706421
 Rigidbody2D:
   serializedVersion: 4
@@ -91,8 +91,8 @@ MonoBehaviour:
   speed: 0
   _isPiercing: 0
   _cost: 0
---- !u!70 &85219876892801551
-CapsuleCollider2D:
+--- !u!58 &4680161382996176309
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,9 +104,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3, y: 0.5}
-  m_Size: {x: 3, y: 8}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &4590916364630428218
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,12 +181,12 @@ SpriteRenderer:
   m_SortingLayerID: -119178437
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -34585186, guid: d171675ff38bee942a6a411071711f59, type: 3}
+  m_Sprite: {fileID: -186028988, guid: 785ae0b8cc6f7534d94b0c55daf33af5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.8, y: 4.8}
+  m_Size: {x: 0.9375, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -202,7 +202,7 @@ Animator:
   m_GameObject: {fileID: 4590916364630428218}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c7c378c0795b9345a192d5b5d89b306, type: 2}
+  m_Controller: {fileID: 9100000, guid: c2393dfde6a12184ab745ea0abbc7e16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

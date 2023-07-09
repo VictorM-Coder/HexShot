@@ -46,9 +46,10 @@ public class Bullet : MonoBehaviour
             var healthController = collision.gameObject.GetComponent<HealthController>();
 
             healthController.TakeDamage(_damageAmount);
+        } else if (collision.CompareTag("Shotgun")) {
+            return;
         }
         if(!_isPiercing) Destroy(gameObject);
-        
     }
 
 

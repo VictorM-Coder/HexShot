@@ -42,12 +42,15 @@ public class PlayerShoot : MonoBehaviour
         changeBulletSelected(); 
     }
 
-    private void FireBullet()
+   private void FireBullet()
     {
-        GameObject bullet = Instantiate(_bulletPrefab[_bulletSelectedPosition], _gunOffset.position, transform.rotation);
-        Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
-
-        rigidbody.velocity = getBulletSelected().getSpeed() * transform.up;
+        if (_bulletPrefab[_bulletSelectedPosition].CompareTag("FlashShot") || _bulletPrefab[_bulletSelectedPosition].CompareTag("Bullet")) {
+            instatiateBullets(0);
+        } else if (_bulletPrefab[_bulletSelectedPosition].CompareTag("Shotgun")) {
+           instatiateBullets(15);
+           instatiateBullets(0);
+           instatiateBullets(-15);
+        }
     }
 
     private void OnFire(InputValue inputValue)
@@ -101,11 +104,22 @@ public class PlayerShoot : MonoBehaviour
             }else {
                 _bulletSelectedPosition = 0;
             }
+            _bulletType.text = getBulletSelected().getName();
         }
-        _bulletType.text = ">>" + getBulletSelected().getName() + "<<";
     }
 
     private Bullet getBulletSelected() {
         return  _bulletPrefab[_bulletSelectedPosition].GetComponent<Bullet>();
+    }
+
+    private GameObject instatiateBullets(float angle) {
+        GameObject bullet = Instantiate(_bulletPrefab[_bulletSelectedPosition], _gunOffset.position, transform.rotation);
+        Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
+
+        Quaternion rotation = Quaternion.Euler(0f, 0f, angle); // Rotação de 45 graus em torno do eixo Y
+        Vector2 direction = rotation * transform.up; // Direção atualizada com a rotação
+
+        rigidbody.velocity = getBulletSelected().getSpeed() * direction;
+        return bullet;
     }
 }
