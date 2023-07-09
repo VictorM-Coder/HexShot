@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
     private Vector2 _targetDirection;
     private SpriteRenderer _spriteRenderer;
     private float _changeDirectionCooldown;
+    private bool _isColliding;
 
 
     private void Awake()
@@ -46,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void HandleRandomDirectionChange()
     {
-        _changeDirectionCooldown -= Time.deltaTime;
+       _changeDirectionCooldown -= Time.deltaTime;
 
         if(_changeDirectionCooldown <= 0)
         {
@@ -61,7 +62,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void RotateTowardsTarget()
     {
-
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
 
