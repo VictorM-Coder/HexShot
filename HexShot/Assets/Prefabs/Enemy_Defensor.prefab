@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7204407843423028445}
   - component: {fileID: 1776928782735193109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297267427816829290}
   - component: {fileID: 3297267427816829291}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 2958198067702031547}
   - component: {fileID: 5034802310546650989}
   - component: {fileID: 4724860981830385137}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy_Defensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 4200362944289600090}
   - component: {fileID: 8976538543458449183}
   - component: {fileID: 8976538543458449180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShieldOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,10 +416,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -430,7 +430,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3, y: 1}
+  m_Size: {x: 3, y: 0.3}
   m_EdgeRadius: 0
 --- !u!114 &8976538543458449183
 MonoBehaviour:

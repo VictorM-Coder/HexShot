@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6169565656301316813}
   - component: {fileID: 4128714782815074587}
   - component: {fileID: 4395801554950566791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy_Atirador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5859514615793631004}
   - component: {fileID: 5859514615793631005}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6134487878317285200}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gun Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}

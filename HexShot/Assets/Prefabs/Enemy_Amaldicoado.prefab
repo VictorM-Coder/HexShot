@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4383678280408794668}
   - component: {fileID: 6319059033658379752}
   - component: {fileID: 7385481147842972191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy_Amaldicoado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6319059034785129016}
   - component: {fileID: 6319059034785129017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
