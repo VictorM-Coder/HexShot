@@ -77,4 +77,8 @@ public class HealthController : MonoBehaviour
             _currentHealth = _maximumHealth;
         }
     }
+
+    public void DestroyHimself() {
+        Destroy(gameObject);
+    }
 }
