@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d171675ff38bee942a6a411071711f59
+guid: 7522cb7cb52a60245a51a9adcf38dc14
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,9 +36,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,85 +117,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: simple_bullet_0
+      name: bulletstorm_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.61192334, y: 0.5324938}
+      pivot: {x: 0.35750818, y: 0.46028516}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be137db7b8ef5f2488d54c3f1693cfcf
-      internalID: -34585186
+      spriteID: a0388dc158b76b14db25f1e83fdb3875
+      internalID: -2084735267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simple_bullet_1
+      name: bulletstorm_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.5830399, y: 0.5288834}
+      pivot: {x: 0.48459536, y: 0.46389562}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6faa64396954a134284746862e2cb013
-      internalID: 491868542
+      spriteID: 89fd00935e3a9d247a818cc5b4d6081f
+      internalID: -1471299763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simple_bullet_2
+      name: bulletstorm_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 30
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.65163803, y: 0.52527297}
+      pivot: {x: 0.49229735, y: 0.46750605}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819cfd01c274dfa42a1bce8d47b2f13b
-      internalID: 1519570264
+      spriteID: 18b1f8da38778f446a8d3886977933a4
+      internalID: -1791978455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simple_bullet_3
+      name: bulletstorm_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 45
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.6408067, y: 0.52527297}
+      pivot: {x: 0.49614844, y: 0.46028516}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 815f9ed5f1e3e4f43887c715558114aa
-      internalID: -1481838336
+      spriteID: e42d2a643cd88f447ab00ef23efcd032
+      internalID: -1731247747
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      simple_bullet_0: -34585186
-      simple_bullet_1: 491868542
-      simple_bullet_2: 1519570264
-      simple_bullet_3: -1481838336
+      bulletstorm_0: -2084735267
+      bulletstorm_1: -1471299763
+      bulletstorm_2: -1791978455
+      bulletstorm_3: -1731247747
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

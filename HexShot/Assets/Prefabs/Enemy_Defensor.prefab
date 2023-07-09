@@ -241,8 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1937f16c34441784ba8267faa37ce41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 6
-  _rotationSpeed: 200
+  _speed: 4
+  _rotationSpeed: 100
 --- !u!114 &6872136361159091727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cb9a47df900154b962f2e53076ed26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 30
-  _maximumHealth: 30
+  _currentHealth: 50
+  _maximumHealth: 50
   OnDied:
     m_PersistentCalls:
       m_Calls:

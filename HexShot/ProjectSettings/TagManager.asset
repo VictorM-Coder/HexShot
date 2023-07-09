@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - FlashShot
   - Shotgun
+  - BulletStorm
   layers:
   - Default
   - TransparentFX

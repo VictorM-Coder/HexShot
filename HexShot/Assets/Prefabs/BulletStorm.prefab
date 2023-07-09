@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3292599387912706421}
   - component: {fileID: 85219876892801551}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Bullet
+  m_Name: BulletStorm
+  m_TagString: BulletStorm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,11 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847fe0b340eed7b4fb39b734a74805ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 10
-  _name: Normal Shot
-  speed: 40
+  _damageAmount: 4
+  _name: BulletStorm
+  speed: 30
   _isPiercing: 0
-  _cost: 1
+  _cost: 6
 --- !u!50 &3292599387912706421
 Rigidbody2D:
   serializedVersion: 4
@@ -87,7 +87,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3, y: 8}
+  m_Size: {x: 3, y: 4}
   m_Direction: 0
 --- !u!1 &4590916364630428218
 GameObject:
@@ -163,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: -119178437
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -34585186, guid: d171675ff38bee942a6a411071711f59, type: 3}
+  m_Sprite: {fileID: -2084735267, guid: 7522cb7cb52a60245a51a9adcf38dc14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -184,7 +184,7 @@ Animator:
   m_GameObject: {fileID: 4590916364630428218}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c7c378c0795b9345a192d5b5d89b306, type: 2}
+  m_Controller: {fileID: 9100000, guid: d5772f5d673f4774c9a5ab54a70bf0ea, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

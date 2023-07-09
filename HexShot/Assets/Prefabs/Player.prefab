@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056089712994587195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.102, y: 1.824, z: 0}
+  m_LocalPosition: {x: -0.1, y: 1.824, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ac0649798778642ab224971069d6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletType: {fileID: 0}
   _bullets: 6
   _numOfBullets: 6
   _imageBullets:
@@ -284,6 +285,8 @@ MonoBehaviour:
   _bulletPrefab:
   - {fileID: 2341276074153263409, guid: ac4ddf0841027c849a112600e4002f8f, type: 3}
   - {fileID: 2341276074153263409, guid: abb6bf1cb925f3642929d5e2c1c819e7, type: 3}
+  - {fileID: 2341276074153263409, guid: 15b5397962ba1614f88d29953ce16bd1, type: 3}
+  - {fileID: 2341276074153263409, guid: e8f60ec6d70273446bbf0a978a481654, type: 3}
   _gunOffset: {fileID: 1056089712994587194}
   _timeBetweenShots: 0.4
 --- !u!114 &1056089713802426466

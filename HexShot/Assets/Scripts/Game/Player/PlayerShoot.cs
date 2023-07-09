@@ -50,6 +50,8 @@ public class PlayerShoot : MonoBehaviour
            instatiateBullets(15);
            instatiateBullets(0);
            instatiateBullets(-15);
+        } else {
+            StartCoroutine(bulletStorm());
         }
     }
 
@@ -104,8 +106,8 @@ public class PlayerShoot : MonoBehaviour
             }else {
                 _bulletSelectedPosition = 0;
             }
-            _bulletType.text = getBulletSelected().getName();
         }
+        _bulletType.text = getBulletSelected().getName();
     }
 
     private Bullet getBulletSelected() {
@@ -116,10 +118,17 @@ public class PlayerShoot : MonoBehaviour
         GameObject bullet = Instantiate(_bulletPrefab[_bulletSelectedPosition], _gunOffset.position, transform.rotation);
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 
-        Quaternion rotation = Quaternion.Euler(0f, 0f, angle); // Rotação de 45 graus em torno do eixo Y
-        Vector2 direction = rotation * transform.up; // Direção atualizada com a rotação
+        Quaternion rotation = Quaternion.Euler(0f, 0f, angle);
+        Vector2 direction = rotation * transform.up;
 
         rigidbody.velocity = getBulletSelected().getSpeed() * direction;
         return bullet;
+    }
+
+    private IEnumerator bulletStorm() {
+        for (int cont = 1; cont <= 20; cont++){
+            yield return new WaitForSeconds(Random.Range(0.01f, 0.05f));
+            instatiateBullets(Random.Range(0, 5));
+        }
     }
 }
