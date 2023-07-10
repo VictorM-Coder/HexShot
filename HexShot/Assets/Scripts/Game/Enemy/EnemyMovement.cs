@@ -51,11 +51,11 @@ public class EnemyMovement : MonoBehaviour
 
         if(_changeDirectionCooldown <= 0)
         {
-            float angleChange = Random.Range(-90f, 90f);
+            float angleChange = Random.Range(-150f, 150f);
             Quaternion rotation = Quaternion.AngleAxis(angleChange, transform.forward); 
             _targetDirection = rotation * _targetDirection;
 
-            _changeDirectionCooldown = Random.Range(1f, 5f);
+            _changeDirectionCooldown = Random.Range(1f, 3f);
         }
     }
 
@@ -77,4 +77,14 @@ public class EnemyMovement : MonoBehaviour
     {
         _spriteRenderer.color = new Color(255, 0, 0);
     }
+
+    // private void OnCollisionStay2D(Collision2D collision)
+    // {
+    //     if(collision.collider is CompositeCollider2D) 
+    //     {
+    //         UpdateTargetDirection();
+    //         RotateTowardsTarget();
+    //         SetVelocity();
+    //     }
+    // }
 }
