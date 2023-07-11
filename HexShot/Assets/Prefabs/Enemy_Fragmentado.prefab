@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4383678280408794668}
   - component: {fileID: 6319059033658379752}
   - component: {fileID: 7385481147842972191}
+  - component: {fileID: 1268165963069692570}
   m_Layer: 3
   m_Name: Enemy_Fragmentado
   m_TagString: Untagged
@@ -118,13 +119,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6319059033658379670}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1268165963069692570}
+        m_TargetAssemblyTypeName: EnemyFragmentadoAttack, Assembly-CSharp
+        m_MethodName: CreateNewFragmentados
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -198,6 +199,19 @@ CircleCollider2D:
   m_Offset: {x: 0.1, y: 0}
   serializedVersion: 2
   m_Radius: 1.2
+--- !u!114 &1268165963069692570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6319059033658379670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500d9657b64b61a4da138593fa9d98ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fragmentadoCloneManager: {fileID: 5580336462955376384, guid: 46a0531afd1bc9945b5f5728c7163458, type: 3}
 --- !u!1 &6319059034785128999
 GameObject:
   m_ObjectHideFlags: 0
