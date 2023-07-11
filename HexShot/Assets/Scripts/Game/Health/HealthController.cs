@@ -3,6 +3,8 @@ using UnityEngine.Events;
 
 public class HealthController : MonoBehaviour
 {
+    private Animator _animator;
+
     [SerializeField]
     private float _currentHealth;
 
@@ -28,6 +30,7 @@ public class HealthController : MonoBehaviour
     private void Awake()
     {
         OnHealthChanged.Invoke();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     public void TakeDamage(float damageAmount)
@@ -54,6 +57,7 @@ public class HealthController : MonoBehaviour
         if (_currentHealth == 0)
         {
             OnDied.Invoke();
+            _animator.SetBool("IsDied", true); 
         }
         else
         {
