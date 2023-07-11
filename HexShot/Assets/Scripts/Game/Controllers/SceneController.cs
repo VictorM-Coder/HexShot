@@ -1,22 +1,26 @@
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
+    public TextMeshProUGUI _quantityEnemiesText;
 
-    private void Awake()
-    {
-        
-    }
+    public UnityEvent OnFinish;
+
+    private int _quantityEnemies;
 
     // Update is called once per frame
     void Update()
     {
         GetNumberOfObjectsInScene();
+
+        if(_quantityEnemies == 0)
+        {
+            OnFinish.Invoke();
+        }
     }
 
     void GetNumberOfObjectsInScene()
@@ -24,6 +28,12 @@ public class SceneController : MonoBehaviour
         EnemyMovement[] allObjects = UnityEngine.Object.FindObjectsOfType<EnemyMovement>();
         int numberOfObjects = allObjects.Length;
 
-        Debug.Log("Quantidade de objetos na cena: " + numberOfObjects);
+        _quantityEnemies = numberOfObjects;
+        _quantityEnemiesText.text = _quantityEnemies.ToString();
+    }
+
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }
