@@ -120,10 +120,10 @@ TextureImporter:
       name: atirador_0
       rect:
         serializedVersion: 2
-        x: 148
-        y: 58
-        width: 199
-        height: 228
+        x: 0
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81da8fbdd8e7d134bbe8160026d7efa7
-      internalID: -1563475744
+      spriteID: 27d703f5241ca334fb3efbe15e3e7bfa
+      internalID: -1877006322
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: atirador_1
       rect:
         serializedVersion: 2
-        x: 628
-        y: 58
-        width: 198
-        height: 228
+        x: 480
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f777d23a4ca08d41b19c890364cf25e
-      internalID: 959873724
+      spriteID: c1612e08360896b458c8d5b10faf85cd
+      internalID: 445483518
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: atirador_2
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 58
-        width: 198
-        height: 273
+        x: 960
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7e790d90e0d3045823fa89cb368a83
-      internalID: 310962472
+      spriteID: 35d50f96b725b304ba59e4f97c5449e1
+      internalID: -330309428
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: atirador_3
       rect:
         serializedVersion: 2
-        x: 1588
-        y: 58
-        width: 199
-        height: 244
+        x: 1440
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b8de720c22cbe4fb35582eaaeea109
-      internalID: 710748949
+      spriteID: 257c2a8b5c5278049b57295399dc0ac5
+      internalID: 2025977291
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: atirador_4
       rect:
         serializedVersion: 2
-        x: 2068
-        y: 58
-        width: 198
-        height: 244
+        x: 1920
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 040176f23ad15704896eaea338da69aa
-      internalID: 788966160
+      spriteID: 4944c143251010c45ab568785d4d1325
+      internalID: -628645270
       vertices: []
       indices: 
       edges: []
@@ -225,10 +225,10 @@ TextureImporter:
       name: atirador_5
       rect:
         serializedVersion: 2
-        x: 2549
-        y: 58
-        width: 198
-        height: 273
+        x: 2400
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ea9a99344611754484ec5e5df870b4a
-      internalID: -1114708537
+      spriteID: e704e4dd9c1261343bf350c04a251ff9
+      internalID: -864841164
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      atirador_0: -1563475744
-      atirador_1: 959873724
-      atirador_2: 310962472
-      atirador_3: 710748949
-      atirador_4: 788966160
-      atirador_5: -1114708537
+      atirador_0: -1877006322
+      atirador_1: 445483518
+      atirador_2: -330309428
+      atirador_3: 2025977291
+      atirador_4: -628645270
+      atirador_5: -864841164
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

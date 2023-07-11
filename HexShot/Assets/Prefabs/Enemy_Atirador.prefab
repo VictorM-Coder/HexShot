@@ -225,9 +225,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1}
+  m_Offset: {x: 0, y: 0.4}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 1.1
 --- !u!114 &1059861240070151917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +252,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5859514615793631004}
   - component: {fileID: 5859514615793631005}
+  - component: {fileID: 2132755557094259502}
+  - component: {fileID: 6283464299211961798}
   m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
@@ -315,17 +317,51 @@ SpriteRenderer:
   m_SortingLayerID: -49155897
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1563475744, guid: acf7b33570ab50c42a29cb84716c5d32, type: 3}
+  m_Sprite: {fileID: -1877006322, guid: acf7b33570ab50c42a29cb84716c5d32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.8046923, y: 4.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2132755557094259502
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859514615793630979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adaa69304fe1da6418befd84c2c4f612, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6283464299211961798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859514615793630979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62f795fac92b4a44a1350996118d2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyAnimator: {fileID: 2132755557094259502}
 --- !u!1 &6015276575493876140
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6015276575493876140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 1, z: -0.05074334}
+  m_LocalPosition: {x: -0.7, y: 1.7, z: -0.05074334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
