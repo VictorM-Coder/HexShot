@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6169565656301316813}
   - component: {fileID: 6548684989129482010}
   - component: {fileID: 1781344442995965110}
+  - component: {fileID: 6896455438839022598}
   m_Layer: 3
   m_Name: Enemy_regenerator
   m_TagString: Untagged
@@ -151,6 +152,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6896455438839022598}
+        m_TargetAssemblyTypeName: EnemyDied, Assembly-CSharp
+        m_MethodName: Dead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDamaged:
     m_PersistentCalls:
       m_Calls:
@@ -225,6 +238,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chancePercentage: 10
   _prefabCollectable: {fileID: 3180339434438478700, guid: 789ea896210256b499659151e673df84, type: 3}
+--- !u!114 &6896455438839022598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859514614516011186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbecfa7c10aa9b42918f5610ca85c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blood: {fileID: 1367675760824136553, guid: afca5a2c263d6e3458e28a6cd11566cf, type: 3}
 --- !u!1 &5859514615793630979
 GameObject:
   m_ObjectHideFlags: 0
