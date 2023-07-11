@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -12,13 +13,16 @@ public class EnemyMovement : MonoBehaviour
     private PlayerAwarenessController _playerAwarenessController;
     private Vector2 _targetDirection;
     private SpriteRenderer _spriteRenderer;
+    private Color _originalColor;
     private float _changeDirectionCooldown;
     private bool _isColliding;
+    
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _originalColor = _spriteRenderer.color;
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
         _targetDirection = transform.up;
     }
@@ -45,32 +49,11 @@ public class EnemyMovement : MonoBehaviour
 
     private void HandlePlayerTargeting()
     {
-        //if (_playerAwarenessController.AwareOfPlayer)
-        //{
         _targetDirection = _playerAwarenessController.DirectionToPlayer;
-        //}
     }
 
     private void HandleRandomDirectionChange()
     {
-        // if(_isColliding)
-        // {
-        //     _changeDirectionCooldown = 0f;
-        // }
-        // else 
-        // {
-        //     _changeDirectionCooldown -= Time.deltaTime;
-        // }
-        // if (Physics.Linecast(transform.position, _targetDirection))
-        // {
-        //     _changeDirectionCooldown = 0f;
-        //     Debug.Log("colidiu");
-        // }
-        // else
-        // {
-
-        //     Debug.Log("nao colidiu");
-        // }
 
         _changeDirectionCooldown -= Time.deltaTime;
 
@@ -103,6 +86,17 @@ public class EnemyMovement : MonoBehaviour
     public void ChangeColor()
     {
         _spriteRenderer.color = new Color(255, 0, 0);
+    }
+
+    public void BlinkDamage()
+    {
+        StartCoroutine(DamagedCoroutine());
+    }
+    private IEnumerator DamagedCoroutine()
+    {
+        _spriteRenderer.color = new Color(255, 0, 0);
+         yield return new WaitForSeconds(0.1f);
+        _spriteRenderer.color = _originalColor;
     }
 
     private void OnCollisionExit2D(Collision2D collider)
