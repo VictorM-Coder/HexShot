@@ -12,7 +12,7 @@ public class FragmentadoSplit : MonoBehaviour
         newFragmentado.GetComponent<EnemyFragmentadoAttack>()._level = level;
         newFragmentado.gameObject.transform.localScale = scale;
         newFragmentado.GetComponent<HealthController>().TakeDamage(life);
-
+    
         return newFragmentado;
     }
 }
