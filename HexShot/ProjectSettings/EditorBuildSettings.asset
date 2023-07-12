@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 63657d2c033f9fd4d825dacdd5852ad9
   - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 12366ec47a193c34894d5c110fc41271
+  - enabled: 1
     path: Assets/Scenes/NIvel1.unity
     guid: 47956389efa4ac2439e1af47e6068d22
   - enabled: 1
     path: Assets/Scenes/Nivel2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Purgatorio.unity
-    guid: 0adbdecf0c05c464fa481270c26cc428
+    path: Assets/Scenes/Nivel3.unity
+    guid: d758b88e4f857f64988e7c717017eb16
   - enabled: 1
     path: Assets/Scenes/Nivel4.unity
     guid: 113a777630768c0488340f3098a89ddc
@@ -27,12 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel6.unity
     guid: 14fa1388111a91d4196e010bdb7fcc11
   - enabled: 1
+    path: Assets/Scenes/Purgatorio.unity
+    guid: 0adbdecf0c05c464fa481270c26cc428
+  - enabled: 1
     path: Assets/Scenes/Final.unity
     guid: 790691d34422fef44a4f66c2742a3ce9
-  - enabled: 1
-    path: Assets/Scenes/Nivel3.unity
-    guid: d758b88e4f857f64988e7c717017eb16
-  - enabled: 1
-    path: Assets/Scenes/DeathScene.unity
-    guid: 12366ec47a193c34894d5c110fc41271
   m_configObjects: {}

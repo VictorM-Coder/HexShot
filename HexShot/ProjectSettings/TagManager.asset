@@ -49,6 +49,9 @@ TagManager:
   - name: Background
     uniqueID: 1241900607
     locked: 0
+  - name: Blood
+    uniqueID: 489229743
+    locked: 0
   - name: Collectable
     uniqueID: 1185547775
     locked: 0
