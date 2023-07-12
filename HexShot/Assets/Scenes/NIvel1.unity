@@ -44184,6 +44184,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8138852941527304315}
     - target: {fileID: 1056089713802426467, guid: e90f882c6f74b92439d0cee9351acb98, type: 3}
+      propertyPath: _bulletPrefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056089713802426467, guid: e90f882c6f74b92439d0cee9351acb98, type: 3}
       propertyPath: _imageBullets.Array.data[0]
       value: 
       objectReference: {fileID: 1640182306}
