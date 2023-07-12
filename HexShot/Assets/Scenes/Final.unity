@@ -474,6 +474,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601465818}
   m_CullTransparentMesh: 1
+--- !u!1001 &672663263
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4943908805917381912, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5826a6c799371ac4c96acb09fb414cb8, type: 3}
+    - target: {fileID: 2885501233753676592, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_Name
+      value: SoundPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -234.1835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 75.93691
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815812593452117070, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 827b45b965c90494da5ff9172a173cef, type: 3}
 --- !u!1 &703286145
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,16 +619,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Quit
-        m_Mode: 1
+      - m_Target: {fileID: 7298020530327410452, guid: 10baed7cbb441cf44af940da9c5ecf22, type: 3}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &703286148
@@ -822,7 +883,7 @@ RectTransform:
   - {fileID: 519287976}
   - {fileID: 703286146}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -895,5 +956,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
